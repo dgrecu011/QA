@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Membru Fitness - Alex Petrescu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 1rem auto;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin: 2rem 0;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .achievement {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .achievement:hover {
+            transform: translateY(-5px);
+        }
+
+        .achievement-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #667eea;
+            margin-top: 1rem;
+        }
+
+        .progress-bar {
+            background: #e0e0e0;
+            height: 10px;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            transition: width 0.3s;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .contact-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .contact-link:hover {
+            color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-image">💪</div>
+        <h1>Alex Petrescu</h1>
+        <p class="title">Antrenor Fitness Certificat | Transformare Corporală</p>
+        <p style="opacity: 0.9;">Pasionat de fitness și dezvoltare personală</p>
+    </header>
+
+    <div class="container">
+        <!-- Despre Secțiune -->
+        <section class="section">
+            <h2>Despre Mine</h2>
+            <p>Bună! Sunt Alex, un antrenor fitness dedicat cu peste 5 ani de experiență în industria fitness. Mi-am petrecut cariera ajutând oamenii să atingă obiectivele lor de sănătate și transformare corporală.</p>
+            <p style="margin-top: 1rem;">Sunt certificat în antrenament personal și nutriție sportivă, și cred că fiecare persoană merită o abordare personalizată pentru a-și atinge potențialul maxim.</p>
+        </section>
+
+        <!-- Statistici -->
+        <section class="section">
+            <h2>Statistici</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <span class="stat-number">250+</span>
+                    <span class="stat-label">Clienți Mulțumiți</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Ani de Experiență</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Rata de Succes</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Premii Obținute</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Realizări -->
+        <section class="section">
+            <h2>Realizări și Certificări</h2>
+            <div class="achievements">
+                <div class="achievement">
+                    <div class="achievement-icon">🏆</div>
+                    <strong>Campion Regional</strong>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-icon">📜</div>
+                    <strong>Certificare NASM</strong>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-icon">⭐</div>
+                    <strong>5 Stele - Recenzii</strong>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-icon">💪</div>
+                    <strong>Transformări Remarcabile</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progresul Antrenamentelor -->
+        <section class="section">
+            <h2>Competențe și Specialități</h2>
+            <div style="margin-top: 1.5rem;">
+                <p><strong>Forță și Musculare</strong></p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 95%"></div>
+                </div>
+
+                <p style="margin-top: 1.5rem;"><strong>Pierdere de Greutate</strong></p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%"></div>
+                </div>
+
+                <p style="margin-top: 1.5rem;"><strong>Nutriție și Dietă</strong></p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 88%"></div>
+                </div>
+
+                <p style="margin-top: 1.5rem;"><strong>Mobilitate și Flexibilitate</strong></p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 85%"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mărturii -->
+        <section class="section">
+            <h2>Mărturii de la Clienți</h2>
+            
+            <div class="testimonial">
+                <p>"Alex m-a ajutat să pierd 20 kg în 6 luni! Este foarte profesionist și motivant. Nu pot să-i recomand destul de mult!"</p>
+                <div class="testimonial-author">- Maria S.</div>
+            </div>
+
+            <div class="testimonial">
+                <p>"Am crescut masa musculară și mă simt mai puternic decât oricând. Programele personalizate funcționează cu adevărat!"</p>
+                <div class="testimonial-author">- Andrei C.</div>
+            </div>
+
+            <div class="testimonial">
+                <p>"Cel mai bun antrenor pe care l-am cunoscut. Mereu îmi oferă sfaturi utile și mă ține motivat pe tot parcursul."</p>
+                <div class="testimonial-author">- Elena M.</div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section">
+            <h2>Contactează-mă</h2>
+            <p>Sunt întotdeauna disponibil pentru a discuta despre obiectivele tale de fitness și cum te pot ajuta să le atingi!</p>
+            <div class="contact-links">
+                <a href="mailto:alex@fitness.com" class="contact-link">📧 Email</a>
+                <a href="tel:+40700123456" class="contact-link">📱 Telefon</a>
+                <a href="#" class="contact-link">💻 Website</a>
+                <a href="#" class="contact-link">📍 Locație</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Alex Petrescu - Antrenor Fitness. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
